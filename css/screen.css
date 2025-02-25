@@ -13,7 +13,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
-/* General styles */
 body {
   font-family: 'Lora', Georgia, serif;
   background-color: #2d2d2d;
@@ -25,7 +24,6 @@ body {
   text-align: center;
 }
 
-/* Form styling */
 form {
   background: #fff;
   padding: 4rem;
@@ -78,7 +76,6 @@ input[type="email"] {
     margin-right: 10px;
   }
 
-/* Align checkbox and label inline */
 input[type="checkbox"] + label {
   display: inline-block;
   vertical-align: middle;
