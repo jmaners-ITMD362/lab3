@@ -16,47 +16,72 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* General styles */
 body {
   font-family: 'Lora', Georgia, serif;
-  background-color: #f7f7f7;
+  background-color: #2d2d2d;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
 
 /* Form styling */
 form {
   background: #fff;
-  padding: 2rem;
-  max-width: 400px;
+  padding: 4rem;
   margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
 }
 
 h1 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: #333;
+  text-align: center;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 label {
   font-weight: bold;
   color: #444;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-input[type="email"],
-input[type="checkbox"] {
-  background: #eaeaea;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 1rem;
-  transition: background 0.3s ease-in-out;
+input[type="email"] {
+    background: #eaeaea;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  input[type="checkbox"] {
+    background: #eaeaea;
+    border: none;
+    padding: 0;
+    border-radius: 5px;
+    width: auto;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+    margin-right: 10px;
+  }
+
+/* Align checkbox and label inline */
+input[type="checkbox"] + label {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 input[type="email"]:focus {
